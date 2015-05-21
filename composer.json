@@ -2,11 +2,12 @@
     "name": "matacms/matacms-product",
     "description": "Products management for MATA CMS",
     "keywords": ["yii2", "matacms-product", "product", "mata"],
+    "homepage": "http://www.qi-interactive.com/",
     "type": "yii2-extension",
     "license": "MIT",
     "support": {
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
     },
     "autoload": {
