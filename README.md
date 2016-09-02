@@ -10,7 +10,7 @@ Product module allows to manage products in MATA CMS.
 Installation
 ------------
 
-- Add the application using composer: 
+- Add the application using composer:
 
 ```json
 "matacms/matacms-product": "~1.0.0"
@@ -19,9 +19,9 @@ Installation
 Client
 ------
 
-Product Client extends [`matacms\clients`](https://github.com/qi-interactive/matacms-base/blob/master/clients/SimpleClient.php). 
+Product Client extends [`matacms\clients`](https://github.com/qi-interactive/matacms-base/blob/master/clients/SimpleClient.php).
 
-In addition, it exposes the following methods: 
+In addition, it exposes the following methods:
 
 ```php
 public function findByURI($uri) {}
@@ -41,6 +41,10 @@ Returns all published Product entities without caching.
 
 Changelog
 ---------
+
+## 1.0.0.1-alpha, September 2, 2016
+
+- Updated Product model
 
 ## 1.0.0-alpha, May 21, 2015
 

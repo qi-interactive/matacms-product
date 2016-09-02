@@ -24,7 +24,7 @@ use mata\media\models\Media;
  */
 class Product extends \matacms\db\ActiveRecord implements CalendarInterface
 {
-    
+
     public static function tableName()
     {
         return 'matacms_product';
@@ -41,10 +41,21 @@ class Product extends \matacms\db\ActiveRecord implements CalendarInterface
         ];
     }
 
+    public function behaviors() {
+        return [
+            [
+                'class' => \mata\arhistory\behaviors\HistoryBehavior::className()
+            ],
+            [
+                'class' => \matacms\environment\behaviors\EnvironmentBehavior::className()
+            ],
+        ];
+    }
+
     public static function find() {
         return new ProductQuery(get_called_class());
     }
-    
+
     public function attributeLabels()
     {
         return [
